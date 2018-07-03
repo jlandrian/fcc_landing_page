@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #D0F2E1;
+    color: #163312;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+}
+
+#header {
+    position: fixed;
+    background: #7EA691;
+    top: 0;
+    z-index: 1;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+#header-img {
+    width: 100%;
+    max-width: 420px;
+    max-height: 106px;
+    height: auto;
+    padding: 10px;
+}
+
+main {
+    margin-top: 250px;
+}
+
+#scanimage {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: 5px solid #163312;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(22, 51, 18, 0.3);
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-align: center;
+    padding: 10px;
+    background: #163312;
+}
+
+.nav-link:hover {
+    background: #3E8C33;
+    color: #163312;
+}
+
+ul li a {
+    color: #D0F2E1;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #163312;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#download, #contact {
+    text-align: center;
+}
+
+#download a {
+    color: #163312;
+    display: block;
+    margin-top: 10px;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+
+.card {
+    display: flex;
+    border: 3px solid #163312;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    height: 38vh;
+    box-shadow: 0 0 10px 5px rgba(22, 51, 18, 0.3);
+}
+
+.card h3 {
+    margin-top: 0;
+    background: #163312;
+    color: #D0F2E1;
+    padding: 10px;
+}
+
+.card p {
+    padding: 5px;
+}
+
+input[type=submit] {
+    padding: 10px;
+    background: #163312;
+    color: #D0F2E1;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    background: #3E8C33;
+    color: #163312;
+}   
+
+input[type=email] {
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+}
+
+@media(min-width: 480px) {
+    .container {
+        width: 80%;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+    }
+
+    #header-img {
+       width:50%;
+       height: auto;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li {
+        margin: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media(min-width: 768px) {
+    .card {
+        margin: 20px;
+        font-size: .8em;
+        height: 35vh;
+    }    
+
+    #about {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
