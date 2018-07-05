@@ -114,6 +114,7 @@ ul li a:hover {
     border-radius: 10px;
     height: 38vh;
     box-shadow: 0 0 10px 5px rgba(22, 51, 18, 0.3);
+    font-size: 1em;
 }
 
 .card h3 {
@@ -125,6 +126,10 @@ ul li a:hover {
 
 .card p {
     padding: 5px;
+}
+
+.card i {
+    font-size: 2.75em;
 }
 
 input[type=submit] {
