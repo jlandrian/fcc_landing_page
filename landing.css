@@ -171,17 +171,28 @@ input[type=email] {
     }
 
     ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+    }
+
+    ul li:nth-child(even) {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     ul li .nav-link {
         margin: 10px;
         border-radius: 5px;
         display: inline;
+    }
+}
+
+@media(min-width: 670px) {
+     ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
