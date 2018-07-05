@@ -129,7 +129,8 @@ ul li a:hover {
 }
 
 .card i {
-    font-size: 2.75em;
+    font-size: 3em;
+    margin-bottom: .5em;
 }
 
 input[type=submit] {
